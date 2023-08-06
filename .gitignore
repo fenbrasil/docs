@@ -1,5 +1,4 @@
 backweb
-make.*
 source/sphinx_rtd_theme/*.html
 source/sphinx_rtd_theme/__pycache__
 source/sphinx_rtd_theme/locale
