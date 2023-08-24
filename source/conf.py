@@ -28,7 +28,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx_inline_tabs",
-    ]
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -43,14 +43,20 @@ import sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
 html_title = 'Backstabber Brasil'
 
-# desabilitado por agora
-# html_theme_options = {
-#    "sidebar_hide_name": True,
-# }
+html_theme_options = {
+    'logo_only': True,
+    'display_version': False,
+    'prev_next_buttons_location': 'bottom',
+}
 
 html_static_path = ['_static']
 html_logo = '_static/fen_logo.png'
 html_favicon = '_static/favicon.png'
+
+#html_style = '' - overwrites everything
+
+# additional CSS files
+html_css_files = ['_static/css/custom.css']
 
 pygments_style = "sphinx"
 pygments_dark_style = "dracula"
