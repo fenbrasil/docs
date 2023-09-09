@@ -8,14 +8,15 @@
 
 project = 'Backstabber Brasil'
 copyright = '2023, Backstabber Brasil'
-author = 'Razor,Kopa King'
-release = '0.3'
+author = 'Razor,Kopa King, Cloud'
+release = '0.4'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx_rtd_dark_mode",
+    # "sphinx_rtd_dark_mode",
+    
     # Sphinx's own extensions
     "sphinx.ext.autodoc",
     "sphinx.ext.extlinks",
@@ -38,9 +39,10 @@ language = 'pt_BR'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-import sphinx_rtd_theme
+# import sphinx_rtd_theme
+import furo
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
 html_title = 'Backstabber Brasil'
 
 html_theme_options = {
